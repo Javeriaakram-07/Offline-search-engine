@@ -38,15 +38,15 @@ Syed Al Araib –  contributor<br><br>
 1. Clone the repository:<br>
    ```bash
    git clone https://github.com/Javeriaakram-07/Offline-search-engine.git
-   ```<br>
+   
 2. Navigate to the project folder and compile:<br>
    ```bash
    g++ src/main.cpp -o OfflineSearchEngine
-   ```<br>
+   
 3. Run the executable:<br>
    ```bash
    ./OfflineSearchEngine
-   ```<br>
+   
 4. Enter keywords to search the offline dataset.<br><br>
 
 ## Notes<br>
