@@ -30,9 +30,9 @@ Offline-search-engine/<br>
 └── README.md<br><br>
 
 ## Contributors<br>
-Javeria Akram – Repo Owner<br>
-Ayesha Arif –  contributor<br>
-Syed Al Araib –  contributor<br><br>
+Javeria Akram - BCSF24A005 – Repo Owner<br>
+Syeda Laraib – BCSF24A002 - contributor<br><br>
+Ayesha Arif – BCSF24A040 - contributor<br><br>
 
 ## Usage<br>
 1. Clone the repository:<br>
