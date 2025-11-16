@@ -11,10 +11,10 @@ void clearScreen();
 void waitForEnter();
 void showWelcome();
 int displayMainMenu();
-void searchMenu(string *dataLines, int lineCount, string *&searchHistory, int &historyCount);
-void displayHistory(string *&history, int &historyCount, string *dataLines, int lineCount);
-void displayResults(string *results, int count);
-void displayNoResultMessage(const string &keyword);
+void searchMenu(string *dataLines, int lineCount, string *&searchHistory, int *&frequency, int &historyCount);
+void displayHistory(string *&history, int *&frequency, int &historyCount, string *dataLines, int lineCount);
+
+
 
 // -----------------------------
 // File Handling / Data functions
@@ -26,8 +26,8 @@ bool loadSingleFile(const string &filename, string *&dataLines, int &lineCount);
 bool loadDataFiles(string *filePaths, int fileCount, string *&dataLines, int &lineCount);
 void showFileSummary(string *filePaths, int fileCount, int lineCount);
 void clearData(string *&dataLines, int &lineCount);
-void readSearchHistory(string *&history, int &historyCount);
-void logSearchToFile(const string &keyword);
+void readSearchHistory(string *&history, int *&frequency, int &historyCount);
+void logSearchToFile(const string &keyword, string *&history, int *&frequency, int &historyCount);
 
 // -----------------------------
 // Search Engine functions
