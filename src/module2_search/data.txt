@@ -1,0 +1,138 @@
+Samsung Galaxy S24 Ultra — 200MP camera, 12 GB RAM, 512 GB storage, 5G, 6.8″ AMOLED  
+Samsung Galaxy S24 — 50MP triple camera, 8 GB RAM, 256 GB storage, 5G, 6.2″ Dynamic AMOLED  
+Samsung Galaxy A55 5G — 108MP quad-camera, 8 GB RAM, 128 GB storage, 5G, 6.5″ LCD  
+Samsung Galaxy A35 — 50MP dual camera, 6 GB RAM, 64 GB storage, 5G, 6.4″ LCD  
+Apple iPhone 16 Pro — LiDAR, A20 Bionic, 12 GB RAM, 1 TB storage, 5G, 6.7″ Pro‑Motion OLED  
+Apple iPhone 16 — 48 MP main camera, 8 GB RAM, 512 GB storage, 5G, 6.1″ OLED  
+Apple iPhone SE (2025) — 12MP single camera, 4 GB RAM, 128 GB storage, 4G, 4.7″ Retina Display  
+Google Pixel 10 Pro — 200MP AI camera, Tensor G6, 12 GB RAM, 512 GB, 5G, 6.7″ OLED  
+Google Pixel 10 — 50MP dual camera, Tensor G6, 8 GB RAM, 256 GB, 5G, 6.1″ OLED  
+Xiaomi 14 Ultra — Leica quad‑camera, 12 GB RAM, 1 TB storage, 5G, 6.9″ AMOLED :contentReference[oaicite:0]{index=0}  
+Xiaomi Redmi Note 14 — 108MP triple camera, 8 GB RAM, 256 GB storage, 5G, 6.7″ IPS LCD :contentReference[oaicite:1]{index=1}  
+Xiaomi Poco X7 Pro 5G — 64MP triple camera, 8 GB RAM, 128 GB storage, 5G, 6.67″ AMOLED  
+Xiaomi Mi Mix Fold 4 — Foldable screen, 50MP triple camera, 16 GB RAM, 1 TB, 5G  
+OnePlus 13 — 150W fast charging, 48MP quad camera, 12 GB RAM, 512 GB storage, 5G :contentReference[oaicite:2]{index=2}  
+OnePlus Nord 6 — 50MP dual camera, 8 GB RAM, 256 GB storage, 5G, 6.4″ AMOLED  
+Realme 14 Pro — 200MP camera, 12 GB RAM, 1 TB storage, 5G, 6.8″ Super AMOLED  
+Realme Narzo 60 — 64MP camera, 8 GB RAM, 256 GB storage, 5G, 6.5″ LCD  
+Vivo V40 Pro — 108MP AI camera, 12 GB RAM, 512 GB storage, 5G, 6.7″ AMOLED  
+Vivo Y40 — 50MP & 8MP dual rear camera, 6 GB RAM, 128 GB storage, 4G, 6.5″ IPS  
+Oppo Reno 15 Pro — 50MP gimbal camera, 11 GB RAM, 512 GB, 5G, 6.7″ AMOLED  
+Oppo A78 — 50MP dual camera, 8 GB RAM, 256 GB storage, 5G, 6.5″ LCD :contentReference[oaicite:3]{index=3}  
+Honor Magic V — Foldable 120Hz, 50MP triple, 12 GB RAM, 512 GB, 5G :contentReference[oaicite:4]{index=4}  
+Honor X50 — 64MP camera, 8 GB RAM, 256 GB, 5G, 6.78″ LCD  
+Tecno Phantom V Flip 2 — Clamshell design, 50MP camera, 8 GB RAM, 256 GB, 5G :contentReference[oaicite:5]{index=5}  
+Tecno Camon 40 — 64MP camera, 12 GB RAM, 512 GB, 5G, 6.9″ AMOLED  
+Tecno Pova 7 Ultra — Gaming chip, 108MP camera, 16 GB RAM, 512 GB storage, 5G  
+Infinix Note 40 — 200MP camera, 12 GB RAM, 512 GB, 5G, 6.9″ display :contentReference[oaicite:6]{index=6}  
+Infinix Hot 30 — 50MP dual camera, 8 GB RAM, 128 GB, 4G, 6.6″ IPS  
+Nokia XR30 — Rugged design, 50MP PureView, 8 GB RAM, 128 GB, 5G  
+Nokia G60 — 108MP triple camera, 12 GB RAM, 256 GB, 5G  
+Huawei Mate X5 — Foldable, 100MP Leica, 12 GB RAM, 1 TB, 5G  
+Huawei P70 Pro — 200MP camera, 12 GB RAM, 512 GB, 5G  
+Motorola Edge 70 — 108MP camera, 12 GB RAM, 256 GB, 5G  
+Motorola G54 — 50MP dual camera, 8 GB RAM, 128 GB, 5G  
+Sony Xperia 2 V — 48MP triple camera, 12 GB RAM, 512 GB, 5G  
+Sony Xperia 5 VI — 64MP triple-lens, 12 GB RAM, 256 GB, 5G  
+LG Wing 3 — Swivel screen, 108MP camera, 12 GB RAM, 512 GB, 5G  
+Lava Agni 5G — 50MP camera, 8 GB RAM, 128 GB, India‑made 5G phone :contentReference[oaicite:7]{index=7}  
+Duoqin Qin 3 Ultra — Compact phone, minimal apps, 8 MP camera, 4G :contentReference[oaicite:8]{index=8}  
+Black Shark 6 Pro — Gaming phone, 64MP camera, 16 GB RAM, 512 GB, 5G  
+Asus ROG Phone 9 — 50MP camera, 18 GB RAM, 1 TB storage, 5G, 165Hz screen  
+Fairphone 6 — Ethical phone, 50MP camera, 8 GB RAM, 256 GB, 4G  
+Google Pixel Fold 2 — Foldable, 48MP dual camera, 12 GB RAM, 512 GB, 5G  
+Honor Magic 5 Ultimate — 108MP camera, 16 GB RAM, 1 TB storage, 5G  
+Realme GT 8 — 160W fast charging, 50MP camera, 12 GB RAM, 512 GB, 5G  
+Poco X9 — 108MP camera, 8 GB RAM, 256 GB, 5G, 6.6″ AMOLED  
+Nothing Phone 3 — Glyph LEDs, 50MP dual camera, 12 GB RAM, 256 GB, 5G  
+ZTE Nubia Z90 Ultra — 200MP camera, 16 GB RAM, 1 TB, 5G, 6.9″ display  
+Alcatel 1S 2025 — 48MP camera, 4 GB RAM, 64 GB, 4G  
+BlackBerry Key4 — Physical keyboard, 12 MP camera, 8 GB RAM, 128 GB, 4G  
+HTC Desire 30 Pro — 50MP quad camera, 12 GB RAM, 256 GB, 5G  
+Meizu 21 — 108MP camera, 12 GB RAM, 512 GB, 5G  
+Lenovo Legion Phone 4 — Gaming‑oriented, 64MP camera, 18 GB RAM, 1 TB, 5G  
+Acer Predator Phone — 200MP camera, 24 GB RAM, 2 TB storage, 5G  
+Google Pixel 10a — 50MP, 8GB RAM, 128GB, 5G  
+Samsung Galaxy Fold 6 — Foldable, 108MP camera, 12 GB RAM, 512 GB, 5G  
+Xiaomi Mi Pad Phone — 64MP camera, 10 GB RAM, 512 GB, 5G  
+OnePlus Ace 5 — 50MP camera, 12 GB RAM, 512 GB, 5G  
+Realme C80 — 50MP camera, 6 GB RAM, 128 GB, 4G  
+Vivo Y80 — 64MP camera, 8 GB RAM, 256 GB, 5G  
+Oppo Find N4 — Foldable, 50MP triple camera, 12 GB RAM, 512 GB, 5G  
+Honor 90 Pro — 200MP camera, 12 GB RAM, 512 GB, 5G  
+Tecno Spark 25 — 50MP AI camera, 8 GB RAM, 256 GB, 5G  
+Infinix Zero 30 — 108MP camera, 12 GB RAM, 512 GB, 5G  
+Nokia T50 — 50MP dual camera, 8 GB RAM, 128 GB, 5G  
+Huawei Nova 14 — 108MP camera, 12 GB RAM, 512 GB, 5G  
+Motorola Edge X — 200MP camera, 16 GB RAM, 1 TB, 5G  
+Sony Xperia Pro 2 — 64MP camera, 18 GB RAM, 1 TB, 5G  
+Lava Blaze 6 — 64MP camera, 8 GB RAM, 128 GB, 5G :contentReference[oaicite:9]{index=9}  
+Duoqin Qin Mini — Minimal smartphone, 5 MP, 4 GB storage, 4G :contentReference[oaicite:10]{index=10}  
+Black Shark 7 — Gaming phone, 108MP, 16 GB RAM, 512 GB, 5G  
+Asus Zenfone 12 — 50MP camera, 12 GB RAM, 256 GB, 5G  
+Fairphone 7 — 64MP camera, 12 GB RAM, 512 GB, 5G  
+Google Pixel 11 Pro — 50MP triple camera, 12 GB RAM, 512 GB, 5G  
+OnePlus 12 Pro — 150W charging, 200MP camera, 16 GB RAM, 1 TB, 5G  
+Realme 15 Ultra — 200MP camera, 16 GB RAM, 1 TB, 5G  
+Vivo X100 — 200MP quad camera, 16 GB RAM, 1 TB, 5G  
+Oppo Reno 20 — 50MP triple camera, 12 GB RAM, 512 GB, 5G  
+Honor Magic Fold — Foldable, 108MP, 16 GB RAM, 1 TB, 5G  
+Tecno Pova 8 — Gaming‑oriented, 64MP, 12 GB RAM, 512 GB, 5G  
+Infinix Note 60 — 200MP, 16 GB RAM, 1 TB, 5G  
+Nokia 10X — 108MP camera, 12 GB RAM, 256 GB, 5G  
+Huawei Mate X6 — Foldable, 108MP, 16 GB RAM, 1 TB, 5G  
+Motorola Razr 2025 — 50MP camera, foldable, 12 GB RAM, 256 GB, 5G  
+Sony Xperia L5 — 50MP, 8 GB RAM, 128 GB, 4G  
+Lava Yuva 5G — 64MP camera, 8 GB RAM, 128 GB, 5G :contentReference[oaicite:11]{index=11}  
+Duoqin Qin Classic — Simple design, 8 MP camera, 32 GB storage, 4G :contentReference[oaicite:12]{index=12}  
+BlackBerry Bold 2025 — Business keyboard, 12 MP, 8 GB RAM, 128 GB, 5G  
+Asus ROG Phone 10 — 64MP camera, 18 GB RAM, 2 TB storage, 5G  
+Fairphone 6 — Modular design, 50MP camera, 8 GB RAM, 256 GB, 5G  
+Google Pixel 12 — 50MP, 12GB RAM, 512GB, 5G  
+OnePlus Nord 8 — 64MP, 8GB RAM, 256GB, 5G  
+Realme GT 9 — 50MP, 12 GB RAM, 512 GB, 5G  
+Vivo Y100 — 108MP, 8GB RAM, 256GB, 5G  
+Oppo Find X6 — 200MP, 16GB RAM, 1TB, 5G  
+Honor 100 — 64MP, 8GB RAM, 256GB, 5G  
+Tecno Spark 32 — 50MP, 6GB RAM, 128GB, 4G  
+Infinix Hot 40 — 64MP, 8GB RAM, 256GB, 5G  
+Nokia C52 — 50MP, 6GB RAM, 128GB, 4G  
+Huawei P90 — 200MP, 16GB RAM, 1TB, 5G  
+Motorola G84 — 108MP, 12GB RAM, 256GB, 5G  
+Sony Xperia X10 — 64MP, 12GB RAM, 512GB, 5G  
+Lava Agni 6 — 50MP, 12GB RAM, 512GB, 5G :contentReference[oaicite:13]{index=13}  
+Duoqin Qin Lite — Compact, 5MP, 16GB, 4G :contentReference[oaicite:14]{index=14}  
+Black Shark 8 — 64MP, 14GB RAM, 512GB, 5G  
+Asus Zenfone 13 — 50MP, 12GB RAM, 256GB, 5G  
+Fairphone 8 — 64MP, 8GB RAM, 512GB, 5G  
+Google Pixel Fold 3 — Foldable, 50MP, 12GB RAM, 512GB, 5G  
+OnePlus 15 — 64MP, 12GB RAM, 512GB, 5G  
+Realme 16 — 50MP, 8GB RAM, 128GB, 5G  
+Vivo X120 — 200MP, 16GB RAM, 1TB, 5G  
+Oppo A100 — 48MP, 8GBRAM, 256GB, 4G  
+Honor Magic 6 — 108MP, 12GBRAM, 512GB, 5G  
+Tecno Camon 50 — 64MP, 12GBRAM, 512GB, 5G  
+Infinix Note 70 — 200MP, 16GBRAM, 1TB, 5G  
+Nokia 20 — 108MP, 12GBRAM, 256GB, 5G  
+Huawei Mate 70 — 200MP, 16GBRAM, 1TB, 5G  
+Motorola Razr Fold 4 — 50MP, 12GBRAM, 1TB, 5G  
+Sony Xperia Pro X — 64MP, 18GBRAM, 1TB, 5G  
+Lava Blaze Dragon 6 — 108MP, 12GBRAM, 512GB, 5G :contentReference[oaicite:15]{index=15}  
+Duoqin Qin Ultra — 8MP, 4GBStorage, 4G :contentReference[oaicite:16]{index=16}  
+BlackBerry Key6 — Keyboard, 12MP, 8GBRAM, 128GB, 4G  
+Asus ROG Phone 11 — 64MP, 18GBRAM, 2TB, 5G  
+Fairphone 9 — 64MP, 12GBRAM, 1TB, 5G  
+Google Pixel 13 — 50MP, 12GBRAM, 512GB, 5G  
+OnePlus 16 Pro — 200MP, 16GBRAM, 2TB, 5G  
+Realme 17 — 64MP, 8GBRAM, 256GB, 5G  
+Vivo Y200 — 108MP, 8GBRAM, 256GB, 5G  
+Oppo Reno 30 — 200MP, 12GBRAM, 1TB, 5G  
+Honor 120 Pro — 200MP, 16GBRAM, 1TB, 5G  
+Tecno Pova 9 — 108MP, 12GBRAM, 512GB, 5G  
+Infinix Zero 60 — 200MP, 16GBRAM, 1TB, 5G  
+Nokia 30 — 108MP, 12GBRAM, 512GB, 5G  
+Huawei P100 — 200MP, 16GBRAM, 2TB, 5G  
+Motorola Edge 90 — 64MP, 12GBRAM, 512GB, 5G  
+Sony Xperia 6 V — 64MP, 12GBRAM, 256GB, 4G  
+Lava Yuva 7 — 50MP, 10GBRAM, 256GB, 5G  
+Duoqin Qin Nano — 5MP, 8GBStorage, 4G :contentReference[oaicite:17]{index=17}  

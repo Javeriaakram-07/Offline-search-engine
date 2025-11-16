@@ -34,6 +34,10 @@ void showFileSummary(string* filePaths, int fileCount, int lineCount);
 
 // Frees dynamically allocated text data
 void clearData(string*& dataLines, int& lineCount);
+// Loads history file into dynamic array
+
+void readSearchHistory(string*& history, int& historyCount);
+
 
 
 /* ============================================================
@@ -65,8 +69,6 @@ bool handleNoResults(int resultCount, const string& keyword);
 // Logs keyword + hits to history file
 void logSearch(const string& keyword, int hits);
 
-// Loads history file into dynamic array
-void readSearchHistory(string*& history, int& historyCount);
 
 
 /* ============================================================
