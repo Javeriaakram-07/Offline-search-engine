@@ -40,29 +40,51 @@ int levenshteinDistance(const string &s1, const string &s2)
 // Find the closest match in the dataset
 string didYouMean(const string &input, string *dataset, int lineCount)
 {
-    string lowerInput = toLowerCase(input);
-    string closest = "";
-    int minDist = numeric_limits<int>::max();
+    const int MAX_WORDS = 15; // max words in a query
+    string words[MAX_WORDS];
+    int wordCount = splitWords(input, words, MAX_WORDS);
 
-    for (int i = 0; i < lineCount; i++)
+    string correctedQuery = "";
+
+    for (int i = 0; i < wordCount; i++)
     {
-        string words[100];
-        int wCount = splitWords(dataset[i], words, 100);
-        for (int j = 0; j < wCount; j++)
+        string closestWord = words[i]; // default: keep original
+        int minDist = numeric_limits<int>::max();
+
+        for (int j = 0; j < lineCount; j++)
         {
-            string w = toLowerCase(words[j]);
-            int dist = levenshteinDistance(lowerInput, w);
-            // threshold: 1/2 length of input word + 1
-            int threshold = max(1, (int)lowerInput.length() / 2 + 1);
-            if (dist < minDist && dist <= threshold)
+            string lineWords[MAX_WORDS];
+            int lineWordCount = splitWords(dataset[j], lineWords, MAX_WORDS);
+
+            for (int k = 0; k < lineWordCount; k++)
             {
-                minDist = dist;
-                closest = words[j];
+                if (lineWords[k].empty())
+                    continue; // safety check
+
+                int dist = levenshteinDistance(toLowerCase(words[i]), toLowerCase(lineWords[k]));
+                if (dist < minDist)
+                {
+                    minDist = dist;
+                    closestWord = lineWords[k];
+                }
             }
         }
+
+        // Only replace if reasonably close
+        if (minDist > 0 && minDist <= 3)
+        {
+            correctedQuery += closestWord;
+        }
+        else
+        {
+            correctedQuery += words[i]; // keep original if no close match
+        }
+
+        if (i != wordCount - 1)
+            correctedQuery += " "; // space between words
     }
 
-    return closest; // empty if no reasonable suggestion
+    return correctedQuery;
 }
 
 int splitWords(const string &line, string *words, int maxWords)

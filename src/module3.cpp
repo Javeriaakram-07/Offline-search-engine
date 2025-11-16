@@ -19,7 +19,7 @@ void waitForEnter()
 
 void showWelcome()
 {
-    cout << "==== SIMPLE TEXT ENGINE ====\n";
+    cout << "==== OFFLINE SEARCH ENGINE ====\n";
 }
 
 int displayMainMenu()

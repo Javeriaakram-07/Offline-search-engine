@@ -35,7 +35,7 @@ Offline-search-engine/<br>
 ## Contributors<br>
 
 Javeria Akram - BCSF24A005 – Repo Owner<br>
-Syeda Laraib – BCSF24A002 - contributor<br><br>
+Syeda Laraib – BCSF24A002 - contributor<br><
 Ayesha Arif – BCSF24A040 - contributor<br><br>
 
 ## Usage<br>
@@ -67,11 +67,4 @@ Ayesha Arif – BCSF24A040 - contributor<br><br>
 
 ---
 
-If you copy-paste this into your `README.md`, **everything will render correctly on GitHub**.<br>
 
-- Headings ✅<br>
-- Bullets ✅<br>
-- Folder structure ✅<br>
-- Contributors and notes ✅<br><br>
-
-I can also make an **even more “professional GitHub-ready” version** with **badges, emojis, and links** to license, contributors, and live demo if you want it to really stand out.<br>
