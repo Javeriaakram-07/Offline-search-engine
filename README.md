@@ -26,16 +26,16 @@ Offline-search-engine/<br>
 │ └── engine.h<br>
 ├── src/<br>
 │ ├── main.cpp<br>
-│ ├── module1_data/<br>
-│ ├── module2_search/<br>
-│ └── module3_ui/<br>
+│ ├── module1_data.cpp<br>
+│ ├── module2_search.cpp<br>
+│ └── module3_ui.cpp<br>
 ├── LICENSE<br>
 └── README.md<br><br>
 
 ## Contributors<br>
 
 Javeria Akram - BCSF24A005 – Repo Owner<br>
-Syeda Laraib – BCSF24A002 - contributor<br><
+Syeda Laraib – BCSF24A002 - contributor<br>
 Ayesha Arif – BCSF24A040 - contributor<br><br>
 
 ## Usage<br>
