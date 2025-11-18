@@ -1,6 +1,6 @@
 #include "../include/engine.h"
 #include <iostream>
-#include<fstream>
+#include <fstream>
 #include <limits>
 using namespace std;
 
@@ -71,9 +71,10 @@ void searchMenu(string *dataLines, int lineCount, string *&history, int *&freque
     else
     {
         string suggestion = didYouMean(keyword, dataLines, lineCount);
+        int matchPercent = calculateMatchPercentage(keyword, suggestion);
         if (!suggestion.empty())
         {
-            cout << "\nDid you mean \"" << suggestion << "\"? (1 = Yes / 0 = No): ";
+            cout << "\nDid you mean \"" << suggestion << "\" (" << matchPercent << "% match)? (1 = Yes / 0 = No): ";
             int ans;
             while (!(cin >> ans) || (ans != 0 && ans != 1))
             {
@@ -176,7 +177,8 @@ void displayHistory(string *&history, int *&frequency, int &historyCount,
     if (!frequency)
     {
         frequency = new int[historyCount];
-        for (int i = 0; i < historyCount; ++i) frequency[i] = 0;
+        for (int i = 0; i < historyCount; ++i)
+            frequency[i] = 0;
     }
 
     // Update frequency for this keyword

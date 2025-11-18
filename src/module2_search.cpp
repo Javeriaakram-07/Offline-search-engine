@@ -107,6 +107,29 @@ int splitWords(const string &line, string *words, int maxWords)
     }
     return count;
 }
+// Calculate match percentage using Levenshtein distance
+int calculateMatchPercentage(const string &original, const string &suggestion)
+{
+    if (original.empty() || suggestion.empty())
+        return 0;
+
+    int dist = levenshteinDistance(toLowerCase(original), toLowerCase(suggestion));
+    int maxLen = max(original.length(), suggestion.length());
+
+    // Prevent division by zero
+    if (maxLen == 0)
+        return 0;
+
+    // Convert to similarity percentage
+    double similarity = (1.0 - (double)dist / maxLen) * 100.0;
+
+    if (similarity < 0)
+        similarity = 0;
+    if (similarity > 100)
+        similarity = 100;
+
+    return (int)(similarity + 0.5); // rounding to nearest whole number
+}
 
 bool matchExact(const string &line, const string &keyword)
 {

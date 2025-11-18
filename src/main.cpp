@@ -10,7 +10,7 @@ int main() {
     string *dataLines = nullptr;
     int lineCount = 0;
 
-    // History now uses TWO arrays:
+    // History uses TWO arrays:
     string *searchHistory = nullptr;   // stores keywords
     int *frequency = nullptr;          // stores frequency for each keyword
     int historyCount = 0;
@@ -28,7 +28,7 @@ int main() {
         cout << "Failed to read file list." << endl;
     }
 
-    // NEW HISTORY LOADER
+    //  HISTORY LOADER
     readSearchHistory(searchHistory, frequency, historyCount);
 
     waitForEnter();

@@ -116,7 +116,6 @@ void clearData(string *&dataLines, int &lineCount)
 
 // =================== Search History (Binary Version) ===================
 
-// Read history from binary file: [len][keyword chars][frequency]
 void readSearchHistory(string *&history, int *&frequency, int &historyCount)
 {
     ifstream fin("history.bin", ios::binary);
