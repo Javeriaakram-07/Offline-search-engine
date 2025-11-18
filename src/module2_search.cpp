@@ -5,7 +5,7 @@ using namespace std;
 
 #define MAX_KEYWORDS 10
 #define MAX_RESULTS 1000
-
+bool correctionmade = false;
 string toLowerCase(const string &s)
 {
     string r = "";
@@ -74,16 +74,19 @@ string didYouMean(const string &input, string *dataset, int lineCount)
         if (minDist > 0 && minDist <= 3)
         {
             correctedQuery += closestWord;
+            correctionmade = true;
         }
         else
         {
-            correctedQuery += words[i]; // keep original if no close match
+            correctedQuery += ""; // keep original if no close match
         }
 
         if (i != wordCount - 1)
             correctedQuery += " "; // space between words
     }
 
+    if (!correctionmade)
+        return "";
     return correctedQuery;
 }
 

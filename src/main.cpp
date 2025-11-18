@@ -3,7 +3,8 @@
 #include "../include/engine.h"
 using namespace std;
 
-int main() {
+int main()
+{
     string *filePaths = nullptr;
     int fileCount = 0;
 
@@ -11,21 +12,27 @@ int main() {
     int lineCount = 0;
 
     // History uses TWO arrays:
-    string *searchHistory = nullptr;   // stores keywords
-    int *frequency = nullptr;          // stores frequency for each keyword
+    string *searchHistory = nullptr; // stores keywords
+    int *frequency = nullptr;        // stores frequency for each keyword
     int historyCount = 0;
 
-    showWelcome();
-
     cout << "Loading files..." << endl;
-    if (loadFileList("data/filelist.txt", filePaths, fileCount)) {
-        if (loadDataFiles(filePaths, fileCount, dataLines, lineCount)) {
-            cout << "Success! Loaded " << fileCount << " files." << endl;
-        } else {
-            cout << "Failed to load file data." << endl;
+    if (loadFileList("data/filelist.txt", filePaths, fileCount))
+    {
+        if (loadDataFiles(filePaths, fileCount, dataLines, lineCount))
+        {
+            cout << GREEN << "Success!" << RESET
+                 << " Loaded " << BOLD << YELLOW << fileCount << RESET
+                 << " files with total " << BOLD << CYAN << lineCount << RESET << " lines.\n";
         }
-    } else {
-        cout << "Failed to read file list." << endl;
+        else
+        {
+            cout << BRED << "Failed to load file data." << RESET << endl;
+        }
+    }
+    else
+    {
+        cout << BRED << "Failed to read file list." << RESET << endl;
     }
 
     //  HISTORY LOADER
@@ -34,31 +41,37 @@ int main() {
     waitForEnter();
 
     bool programRunning = true;
-    while (programRunning) {
+    while (programRunning)
+    {
         showWelcome();
         int choice = displayMainMenu();
 
-        switch (choice) {
-            case 1:
-                searchMenu(dataLines, lineCount, searchHistory, frequency, historyCount);
-                break;
+        switch (choice)
+        {
+        case 1:
+            searchMenu(dataLines, lineCount, searchHistory, frequency, historyCount);
+            break;
 
-            case 2:
-                displayHistory(searchHistory, frequency, historyCount, dataLines, lineCount);
-                break;
+        case 2:
+            displayHistory(searchHistory, frequency, historyCount, dataLines, lineCount);
+            break;
 
-            case 3:
-                showFileSummary(filePaths, fileCount, lineCount);
-                break;
+        case 3:
+            showFileSummary(filePaths, fileCount, lineCount);
+            cout << BMAGENTA << "Press ENTER to continue..." << RESET;
+            waitForEnter();
+            break;
 
-            case 4:
-                programRunning = false;
-                break;
+        case 4:
+            programRunning = false;
+            break;
 
-            default:
-                cout << "Invalid choice!\n";
-                waitForEnter();
-                break;
+        default:
+            cout << BRED << "Invalid choice!\n"
+                 << RESET;
+            cout << BMAGENTA << "Press ENTER to continue..." << RESET;
+            waitForEnter();
+            break;
         }
     }
 
@@ -68,8 +81,10 @@ int main() {
     delete[] frequency;
 
     clearScreen();
+    cout << BOLD << PINK;
     cout << "==========================================\n";
     cout << "  Thank you for using the Search Engine!\n";
     cout << "              Goodbye!\n";
     cout << "==========================================\n";
+    cout << RESET;
 }

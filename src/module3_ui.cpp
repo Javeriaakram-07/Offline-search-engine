@@ -13,26 +13,31 @@ void clearScreen()
 
 void waitForEnter()
 {
-    cout << "\nPress ENTER to continue...";
+    cout << BMAGENTA << "Press ENTER to continue..." << RESET;
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
 }
 
 void showWelcome()
 {
-    cout << "==== OFFLINE SEARCH ENGINE ====\n";
+    cout << BOLD << CYAN << "==== OFFLINE SEARCH ENGINE ====" << RESET << "\n";
 }
 
 int displayMainMenu()
 {
     int choice;
-    cout << "\n========== MAIN MENU ==========\n";
-    cout << "1. Search Text\n2. View Search History\n3. View File Information\n4. Exit Program\n";
-    cout << "Enter choice (1-4): ";
+    cout << "\n"
+         << BOLD << BBLUE << "========== MAIN MENU ==========" << RESET << "\n";
+    cout << GREEN << "1. Search Text\n"
+         << CYAN << "2. View Search History\n"
+         << ORANGE << "3. View File Information\n"
+         << RED << BOLD << "4. Exit Program\n"
+         << RESET;
+
     while (!(cin >> choice) || choice < 1 || choice > 4)
     {
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
-        cout << "Invalid! Enter 1-4: ";
+        cout << BRED << "Invalid! Enter 1-4: " << RESET;
     }
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
     return choice;
@@ -50,7 +55,7 @@ void searchMenu(string *dataLines, int lineCount, string *&history, int *&freque
     }
 
     string keyword;
-    cout << "\nEnter keyword: ";
+    cout << BMAGENTA << "\nEnter keyword: " << RESET;
     getline(cin, keyword);
     if (keyword.empty())
     {
@@ -74,7 +79,11 @@ void searchMenu(string *dataLines, int lineCount, string *&history, int *&freque
         int matchPercent = calculateMatchPercentage(keyword, suggestion);
         if (!suggestion.empty())
         {
-            cout << "\nDid you mean \"" << suggestion << "\" (" << matchPercent << "% match)? (1 = Yes / 0 = No): ";
+            cout << "\n"
+                 << BYELLOW << "Did you mean "
+                 << RESET << "\"" << ORANGE << suggestion << RESET << "\" "
+                 << "(" << PINK << matchPercent << RESET << GREY << "% match" << RESET << ")? "
+                 << CYAN << "(1 = Yes / 0 = No): " << RESET;
             int ans;
             while (!(cin >> ans) || (ans != 0 && ans != 1))
             {
@@ -89,9 +98,14 @@ void searchMenu(string *dataLines, int lineCount, string *&history, int *&freque
                 found = searchEngine(suggestion, dataLines, lineCount, results, 1000);
                 if (found > 0)
                 {
-                    cout << "\nFound " << found << " results for \"" << suggestion << "\":\n";
+                    cout << "\n"
+                         << BCYAN << "Found " << BYELLOW << found << RESET
+                         << BCYAN << " results:\n"
+                         << RESET;
+                    cout << BMAGENTA << "Press ENTER to continue..." << RESET;
+                    waitForEnter();
                     for (int i = 0; i < found; i++)
-                        cout << i + 1 << ". " << results[i] << "\n";
+                        cout << GREEN << i + 1 << ". " << RESET << results[i] << "\n";
                     keyword = suggestion;
                 }
                 else
@@ -135,11 +149,16 @@ void displayHistory(string *&history, int *&frequency, int &historyCount,
     for (int i = 0; i < historyCount; i++)
     {
         int freq = (frequency ? frequency[i] : 0);
-        cout << i + 1 << ". " << history[i]
-             << " (searched " << freq << " times)\n";
+        cout << BOLD << i + 1 << RESET << ". "
+             << GREEN << history[i] << RESET
+             << " (searched "
+             << UNDERLINE << PINK << freq << RESET
+             << " times)\n";
     }
 
-    cout << "\nEnter number to re-run search or 0 to return: ";
+    cout << "\nEnter number to re-run search or "
+         << BOLD << CYAN << "0" << RESET
+         << " to return: ";
     int choice;
 
     while (!(cin >> choice) || choice < 0 || choice > historyCount)
@@ -196,7 +215,8 @@ void displayHistory(string *&history, int *&frequency, int &historyCount,
     }
     else
     {
-        cout << "Warning: failed to update history.txt\n";
+        cout << BRED << "Warning: failed to update history.txt\n"
+             << RESET;
     }
 
     waitForEnter();
