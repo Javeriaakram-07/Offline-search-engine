@@ -41,21 +41,27 @@ Ayesha Arif – BCSF24A040 - contributor<br><br>
 ## Usage<br>
 
 1. Clone the repository:<br>
+
    ```bash
    git clone https://github.com/Javeriaakram-07/Offline-search-engine.git
 
    ```
+
 2. Navigate to the project folder and compile:<br>
+
    ```bash
-   g++ src/main.cpp src/module1.cpp src/module2.cpp src/module3.cpp -Iinclude -o searchEngine
+   g++ src/main.cpp src/module1_filehndlng.cpp src/module2_search.cpp src/module3_ui.cpp -Iinclude -o searchEngine
 
    ```
+
 3. Run the executable:<br>
+
    ```bash
    ./searchEngine   # on Linux/macOS
    searchEngine.exe # on Windows
 
    ```
+
 4. Enter keywords to search the offline dataset.<br><br>
 
 ## Notes<br>
@@ -66,5 +72,3 @@ Ayesha Arif – BCSF24A040 - contributor<br><br>
 ✅ Proper handling of cases when search results are not found with user-friendly messages.<br><br>
 
 ---
-
-
