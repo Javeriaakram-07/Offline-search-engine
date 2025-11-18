@@ -5,7 +5,9 @@ using namespace std;
 
 #define MAX_KEYWORDS 10
 #define MAX_RESULTS 1000
-bool correctionmade = false;
+
+bool correctionMade = false; // Flag to track if any correction happened
+
 string toLowerCase(const string &s)
 {
     string r = "";
@@ -13,6 +15,7 @@ string toLowerCase(const string &s)
         r += tolower(s[i]);
     return r;
 }
+
 int levenshteinDistance(const string &s1, const string &s2)
 {
     int len1 = s1.length();
@@ -40,15 +43,16 @@ int levenshteinDistance(const string &s1, const string &s2)
 // Find the closest match in the dataset
 string didYouMean(const string &input, string *dataset, int lineCount)
 {
-    const int MAX_WORDS = 15; // max words in a query
+    const int MAX_WORDS = 15;
     string words[MAX_WORDS];
     int wordCount = splitWords(input, words, MAX_WORDS);
 
     string correctedQuery = "";
+    correctionMade = false;
 
     for (int i = 0; i < wordCount; i++)
     {
-        string closestWord = words[i]; // default: keep original
+        string closestWord = words[i]; // keep original by default
         int minDist = numeric_limits<int>::max();
 
         for (int j = 0; j < lineCount; j++)
@@ -59,7 +63,7 @@ string didYouMean(const string &input, string *dataset, int lineCount)
             for (int k = 0; k < lineWordCount; k++)
             {
                 if (lineWords[k].empty())
-                    continue; // safety check
+                    continue;
 
                 int dist = levenshteinDistance(toLowerCase(words[i]), toLowerCase(lineWords[k]));
                 if (dist < minDist)
@@ -70,23 +74,23 @@ string didYouMean(const string &input, string *dataset, int lineCount)
             }
         }
 
-        // Only replace if reasonably close
-        if (minDist > 0 && minDist <= 3)
+        // Replace only if reasonably close
+        if (minDist > 0 && minDist <= 3 && closestWord != words[i])
         {
+            correctionMade = true; // correction happened
             correctedQuery += closestWord;
-            correctionmade = true;
         }
         else
         {
-            correctedQuery += ""; // keep original if no close match
+            correctedQuery += words[i]; // keep original word
         }
 
         if (i != wordCount - 1)
-            correctedQuery += " "; // space between words
+            correctedQuery += " ";
     }
 
-    if (!correctionmade)
-        return "";
+    if (!correctionMade)
+        return ""; // nothing changed
     return correctedQuery;
 }
 
@@ -110,6 +114,7 @@ int splitWords(const string &line, string *words, int maxWords)
     }
     return count;
 }
+
 // Calculate match percentage using Levenshtein distance
 int calculateMatchPercentage(const string &original, const string &suggestion)
 {
@@ -118,20 +123,16 @@ int calculateMatchPercentage(const string &original, const string &suggestion)
 
     int dist = levenshteinDistance(toLowerCase(original), toLowerCase(suggestion));
     int maxLen = max(original.length(), suggestion.length());
-
-    // Prevent division by zero
     if (maxLen == 0)
         return 0;
 
-    // Convert to similarity percentage
     double similarity = (1.0 - (double)dist / maxLen) * 100.0;
-
     if (similarity < 0)
         similarity = 0;
     if (similarity > 100)
         similarity = 100;
 
-    return (int)(similarity + 0.5); // rounding to nearest whole number
+    return (int)(similarity + 0.5);
 }
 
 bool matchExact(const string &line, const string &keyword)
@@ -201,20 +202,6 @@ int searchMultiple(const string *keywords, int keywordCount, string *dataset, in
             results[found++] = dataset[i];
     }
 
-    if (found == 0)
-    {
-        for (int i = 0; i < lineCount && found < maxResults; i++)
-        {
-            for (int k = 0; k < keywordCount; k++)
-            {
-                if (matchExact(dataset[i], keywords[k]) || matchPartial(dataset[i], keywords[k]))
-                {
-                    results[found++] = dataset[i];
-                    break;
-                }
-            }
-        }
-    }
     return found;
 }
 

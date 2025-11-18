@@ -67,5 +67,7 @@ string toLowerCase(const string &s);
 int levenshteinDistance(const string &s1, const string &s2);
 string didYouMean(const string &input, string *dataset, int lineCount);
 int calculateMatchPercentage(const string &original, const string &suggestion);
+extern bool correctionMade;  // declare the global flag
+
 
 #endif

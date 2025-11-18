@@ -58,7 +58,6 @@ int main()
 
         case 3:
             showFileSummary(filePaths, fileCount, lineCount);
-            cout << BMAGENTA << "Press ENTER to continue..." << RESET;
             waitForEnter();
             break;
 
