@@ -1,0 +1,34 @@
+{
+  "folders": [
+	{
+		"path": "../../../.."
+	},
+	{
+		"path": "../../../../../../2nd sem/PF LAB"
+	},
+	{
+		"path": "../../../../../../Web dev"
+	},
+	{
+		"path": "../../../../../../../Myportfolio"
+	}
+],
+  "settings": {
+    "files.associations": {
+      "iostream": "cpp",
+      "iomanip": "cpp",
+      "iosfwd": "cpp",
+      "ostream": "cpp",
+      "new": "cpp",
+      "algorithm": "cpp",
+      "file-handling": "cpp",
+      "system_error": "cpp",
+      "array": "cpp",
+      "functional": "cpp",
+      "tuple": "cpp",
+      "type_traits": "cpp",
+      "utility": "cpp"
+    },
+    "liveServer.settings.multiRootWorkspaceName": "Web dev"
+  }
+}

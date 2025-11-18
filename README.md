@@ -26,7 +26,7 @@ Offline-search-engine/<br>
 │ └── engine.h<br>
 ├── src/<br>
 │ ├── main.cpp<br>
-│ ├── module1_data.cpp<br>
+│ ├── module1_filehndlng.cpp<br>
 │ ├── module2_search.cpp<br>
 │ └── module3_ui.cpp<br>
 ├── LICENSE<br>

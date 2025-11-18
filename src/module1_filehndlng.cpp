@@ -113,12 +113,13 @@ void clearData(string *&dataLines, int &lineCount)
     }
 }
 
-// =================== Search History ===================
 
-// Read history from file, format: keyword|frequency
+// =================== Search History (Binary Version) ===================
+
+// Read history from binary file: [len][keyword chars][frequency]
 void readSearchHistory(string *&history, int *&frequency, int &historyCount)
 {
-    ifstream fin("history.txt");
+    ifstream fin("history.bin", ios::binary);
     if (!fin)
     {
         history = nullptr;
@@ -127,41 +128,37 @@ void readSearchHistory(string *&history, int *&frequency, int &historyCount)
         return;
     }
 
-    // Count valid lines first
-    historyCount = 0;
-    string line;
-    while (getline(fin, line))
-        if (!line.empty())
-            historyCount++;
-
-    if (historyCount == 0)
+    // First, read count
+    fin.read(reinterpret_cast<char *>(&historyCount), sizeof(int));
+    if (historyCount <= 0)
     {
         history = nullptr;
         frequency = nullptr;
+        historyCount = 0;
         return;
     }
 
     history = new string[historyCount];
     frequency = new int[historyCount];
 
-    fin.clear();
-    fin.seekg(0);
-
-    int idx = 0;
-    while (getline(fin, line))
+    for (int i = 0; i < historyCount; i++)
     {
-        if (line.empty()) continue;
-        size_t sep = line.find('|');
-        if (sep != string::npos)
-        {
-            history[idx] = line.substr(0, sep);
-            frequency[idx] = stoi(line.substr(sep + 1));
-            idx++;
-        }
+        int len;
+        fin.read(reinterpret_cast<char *>(&len), sizeof(int));
+
+        char *buffer = new char[len + 1];
+        fin.read(buffer, len);
+        buffer[len] = '\0';
+        history[i] = buffer;
+        delete[] buffer;
+
+        fin.read(reinterpret_cast<char *>(&frequency[i]), sizeof(int));
     }
+
+    fin.close();
 }
 
-// Save/Update single keyword to history file
+// Save/Update single keyword to binary file
 void logSearchToFile(const string &keyword, string *&history, int *&frequency, int &historyCount)
 {
     bool found = false;
@@ -177,7 +174,6 @@ void logSearchToFile(const string &keyword, string *&history, int *&frequency, i
 
     if (!found)
     {
-        // Add new keyword
         string *newHist = new string[historyCount + 1];
         int *newFreq = new int[historyCount + 1];
 
@@ -197,12 +193,21 @@ void logSearchToFile(const string &keyword, string *&history, int *&frequency, i
         historyCount++;
     }
 
-    // Rewrite the entire file
-    ofstream fout("history.txt", ios::trunc);
+    // Now write FULL updated history to binary
+    ofstream fout("history.bin", ios::binary | ios::trunc);
     if (fout.is_open())
     {
+        // Save total count first
+        fout.write(reinterpret_cast<char *>(&historyCount), sizeof(int));
+
         for (int i = 0; i < historyCount; i++)
-            fout << history[i] << "|" << frequency[i] << "\n";
+        {
+            int len = history[i].size();
+            fout.write(reinterpret_cast<char *>(&len), sizeof(int));
+            fout.write(history[i].c_str(), len);
+            fout.write(reinterpret_cast<char *>(&frequency[i]), sizeof(int));
+        }
+
         fout.close();
     }
 }
